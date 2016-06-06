@@ -52,11 +52,110 @@ a:hover{
 
 
 /*CONTENT*/
+
+.sidebarWrapper{
+  float: left;
+  margin-left: 3em;
+}
+
+.picBorder{
+  border-bottom: solid .09em #ddd;
+  padding-bottom: .2em;
+}
+
 img{
-  width: 200px;
+  width: 250px;
   height: 200px;
+  padding-top: 1em;
 }
 
 #githubLG{
   padding-right: 1em;
+}
+
+h1{
+  font-weight: bold;
+  font-size: 2em;
+  text-align: left;
+  padding-bottom: .2em;
+}
+
+h3{
+  font-size: 1.5em;
+  text-align: left;
+}
+
+.octocatInfo{
+  font-size: 1em;
+  padding: .30em;
+  text-align: left;
+  border-bottom: solid .09em #ddd;
+}
+
+
+.octocatInfo i{
+  margin: 0 1em 0 0;
+}
+
+.octaStats{
+  padding-top: .20em;
+  display: flex;
+}
+
+.bigStats{
+  padding-top: .2em;
+}
+
+.littleStats{
+  padding-top: .6em;
+  float: left;
+  padding-left: none;
+}
+
+/*MIDDLE NAV BAR*/
+.midNavbar_wrap{
+
+}
+
+#midNavbar_left > li{
+  display: inline-block;;
+}
+
+#midNavbar_right{
+
+}
+
+
+/*POPULAR REPOSITORIES*/
+.repoRapper{
+  margin: 1em 10em;
+  border: 1px solid #c6c6c6;
+}
+
+h4{
+  text-align: left;
+  font-weight: bold;
+  background-color: #dddddd;
+}
+
+.popRepos{
+  text-align: left;
+  font-weight: bold;
+  color: #4078c0;
+}
+
+i{
+  color: black;
+}
+
+.fa-book:before{
+  margin: 1em;
+}
+
+.popInfo{
+  padding-left: 2em;
+  text-align: left;
+  color: #848484;
+  font-weight: lighter;
+  font-size: .8em;
 }
