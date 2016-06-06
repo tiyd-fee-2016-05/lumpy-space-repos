@@ -3,19 +3,25 @@
   <head>
     <meta charset="utf-8">
     <link rel= "stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css">
-    <link rel = "stylesheet" href = "styles.css">
+    <link rel = "stylesheet" href = "assets/css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css">
     <title>Octocat Lumpy Space</title>
   </head>
   <body>
+
+<!-- HEADER -->
     <div class = "header">
-      <span> icon </span>
+      <span id="githubLG"><i class="fa fa-github fa-2x" aria-hidden="true"></i></span>
       <form>
-        <input = "search"> Search GitHub</input>
+        <input class="searchBox" placeholder="Search GitHub"></input>
       </form>
     <div>
-      <span>Pull requests</span>
-      <span>Issues</span>
-      <span>Gist</span>
+      <ul class="topNavbar">
+        <li class="topNavlink"><a href="#">Pull requests</a></li>
+        <li class="topNavlink"><a href="#">Issues</a></li>
+        <li class="topNavlink"><a href="#">Gist</a></li>
+      </ul>
+
     </div>
     <div>
       <!-- Plus icon -->
