@@ -36,12 +36,16 @@
 <div class="contentWrapper">
 
 <!-- SIDEBAR -->
+<div class="SBuser_info">
+</div>
+<script id="gh-user-template" type="text/html">
+
   <div class="sidebarWrapper">
-    <img id="profPic" src="https://assets-cdn.github.com/images/modules/logos_page/Octocat.png" alt="" />
+    <img id="profPic" src="<%- m.avatar_url %>" alt="" />
 
     <div class="picBorder">
-      <h1 id="lo_name"></h1>
-      <h3>octocat</h3>
+      <h1 id="lo_name"><%- m.name %></h1>
+      <h3 id="lo_login"><%- m.login %></h3>
     </div>
 
     <div>
@@ -54,7 +58,7 @@
     </ul>
   </div>
 
-<!--Octospacecat's Stats, Yo-->
+      <!--Octospacecat's Stats, Yo-->
 
     <ul class = "bigStats">
       <li>1.4k</li>
@@ -67,8 +71,8 @@
       <li>Starred</li>
       <li>Following</li>
     </ul>
-</div>
-
+  </div>
+</script>
 <!-- RIGHT SIDE CONTENT -->
   <div class = "miniWrapper">
     <div class="midNavbar_wrap">
