@@ -16,10 +16,6 @@ body{
   font-family: 'helvetica', sans-serif;
 }
 
-.fa-github{
-  color: black;
-}
-
 /*HEADER*/
 .header{
   padding: .5em 0;
@@ -38,6 +34,7 @@ body{
 }
 
 .searchBox{
+<<<<<<< HEAD
     box-shadow: 5px inset;
     width: 250px;
     height: 25px;
@@ -46,6 +43,15 @@ body{
     margin: .25em;
     padding: .6em .3em .6em .3em;
 
+=======
+  box-shadow: 1px 1px 1px 1px #dddddd inset;
+  width: 250px;
+  height: 25px;
+  border: 1px solid #dddddd;
+  border-radius: 2px;
+  margin: .25em;
+  padding: .6em .3em .6em .3em;
+>>>>>>> 8549b66143fbda9d9dd9930a5cc014026c2b8d70
 }
 
 .topNavlink{
@@ -80,14 +86,21 @@ a:hover{
 
 
 /*CONTENT*/
+.mainWrap{
+  display: block;
+  width: 100%;
+}
+
+.contentWrapper{
+  width: 80%;
+  margin: 0 auto;
+  padding: 1em;
+}
 
 .sidebarWrapper{
-  text-align: left;
   display: inline-block;
-  width: 20%;
-  float: left;
   margin: 1em 0 2em 0;
-  padding-left: 0;
+  padding: 1em;
 }
 
 .picBorder{
@@ -109,8 +122,6 @@ a:hover{
   background-color: plum;
   width: 250px;
   height: 250px;
-  padding: 1em 0 0 0;
-  margin: 1em 10em 0 0;
 }
 
 img:hover{
@@ -204,9 +215,9 @@ h3{
 
 /*MIDDLE WRAPPERS*/
 .miniWrapper{
+  vertical-align: top;
   position: relative;
   display: inline-block;
-  width: 50%;
 }
 .midNavbar_wrap{
   padding-bottom: 1em;
