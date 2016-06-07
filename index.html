@@ -1,17 +1,18 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <link rel= "stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css">
-    <link rel = "stylesheet" href = "assets/css/styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.13.1/lodash.js">
-    <title>Octocat Lumpy Space</title>
-  </head>
+<head>
+   <meta charset="utf-8">
+   <link rel= "stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css">
+   <link rel = "stylesheet" href = "assets/css/styles.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css">
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.13.1/lodash.js"></script>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+   <title>Octocat Lumpy Space</title>
+ </head>
   <body>
 
 <!-- HEADER -->
-    <div class = "header"><
+    <div class = "header">
       <span id="githubLG"><i class="fa fa-github" aria-hidden="true"></i></span>
       <form id="topSearch">
         <input class="searchBox" placeholder="Search GitHub"></input>
@@ -35,39 +36,39 @@
 <div class="contentWrapper">
 
 <!-- SIDEBAR -->
+<div class = "SBuser_info">
+</div>
+<script id = "gh-user-template" type = "text/html">
   <div class="sidebarWrapper">
-    <img id="profPic" src="https://assets-cdn.github.com/images/modules/logos_page/Octocat.png" alt="" />
+    <img id="profPic" src="<%- m.avatar_url%>" alt="" />
 
     <div class="picBorder">
-      <h1>The Octocat</h1>
-      <h3>octocat</h3>
+      <h1 id = "lo_name"><%- m.name %></h1>
+      <h3 id = "lo_name"><%- m.login %></h3>
     </div>
 
     <div>
     <ul class = "octocatInfo">
-      <li class = "company"><i class="fa fa-users" aria-hidden="true"></i>GitHub</li>
-      <li class = "location"><i class="fa fa-map-marker" aria-hidden="true"></i>  <text class = "infoText">Durham </text></li>
-      <li class = "email"><i class="fa fa-envelope-o" aria-hidden="true"></i><text class = "infoText">lumpyspace@github.com</text></li>
-      <li class = "blog"><i class="fa fa-link" aria-hidden="true"></i><text class = "infoText">http://www.github.com/blog</text></li>
-      <li class = "dateJoined"><i class="fa fa-clock-o" aria-hidden="true"></i>Joined today</li>
+      <li class = "company"><i class="fa fa-users" aria-hidden="true"></i><%- m.company %></li>
+      <li class = "location"><i class="fa fa-map-marker" aria-hidden="true"></i>  <text class = "infoText"><%- m.location %></text></li>
+      <li class = "email"><i class="fa fa-envelope-o" aria-hidden="true"></i><text class = "infoText"><%- m.email %></text></li>
+      <li class = "blog"><i class="fa fa-link" aria-hidden="true"></i><text class = "infoText"><%- m.blog %></text></li>
+      <li class = "dateJoined"><i class="fa fa-clock-o" aria-hidden="true"></i><%- m.created_at %></li>
     </ul>
   </div>
 
 <!--Octospacecat's Stats, Yo-->
 
-    <ul class = "bigStats">
-      <li>1.4k</li>
-      <li>2</li>
-      <li>6</li>
-    </ul>
-
-    <ul class = "littleStats">
-      <li>Followers</li>
-      <li>Starred</li>
-      <li>Following</li>
+    <ul class = "stats">
+      <li class = "bigStats"><%- m.followers %></span>
+        <span class = "littleStats">Folowers</li>
+      <li class = "bigStats"> 1</span>
+        <span class = "littleStats">placeholder</li>
+      <li class = "bigStats"><%- m.following %></span>
+        <span class = "littleStats">Following</li>
     </ul>
 </div>
-
+</script>
 <!-- RIGHT SIDE CONTENT -->
   <div class = "miniWrapper">
     <div class="midNavbar_wrap">
@@ -115,5 +116,7 @@
 
 
 </div>
+<script type = "text/javascript" src = "assets/js/lumpySpace.js">
+</script>
   </body>
 </html>

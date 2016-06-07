@@ -33,6 +33,10 @@ body{
   display: inline-block;
 }
 
+.SBuser_info{
+  display:inline-block;
+}
+
 .searchBox{
   box-shadow: 1px 1px 1px 1px #dddddd inset;
   width: 250px;
@@ -180,7 +184,7 @@ h3{
   font-size: 2em;
   font-weight: 600;
   color: #4078c0;
-  display: flex;
+  display: inline-block;
 }
 
 .bigStats li{
@@ -194,12 +198,12 @@ h3{
 .littleStats{
   padding: 0 .3em 0 .3em;
   float: left;
-  display: flex;
+  display: ;
   font-weight: 100;
   font-size: .7em;
 }
 
-.littleStats li{
+.littleStats{
   padding: 0 .45em 0 .45em;
 }
 
