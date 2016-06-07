@@ -18,7 +18,7 @@ body{
 
 /*HEADER*/
 .header{
-  /*padding: 1em;*/
+  padding: .4em 0 .4em 0;
   display: flex;
   background-color: #dddddd;
 }
@@ -32,11 +32,23 @@ body{
     height: 25px;
     border: none;
     border-radius: 2px;
+    margin: .25em;
+    padding: .6em .3em .6em .3em;
 }
 
 .topNavlink{
   font-weight: bold;
-  padding: 0 .2em 0 .2em;
+  padding: 0 .25em 0 .25em;
+  margin: .5em;
+}
+
+.plus{
+  float: right;
+}
+
+.lumpySpace{
+  width: 10px;
+  height: 10px;
 }
 
 a:link{
@@ -71,6 +83,7 @@ img{
 
 #githubLG{
   padding-right: 1em;
+  padding-left: 3em;
 }
 
 h1{
@@ -92,10 +105,13 @@ h3{
   border-bottom: solid .09em #ddd;
 }
 
-
 .octocatInfo i{
   margin: 0 1em 0 0;
+  color: #909090;
+  text-align: right;
 }
+
+
 
 .octaStats{
   padding-top: .20em;
