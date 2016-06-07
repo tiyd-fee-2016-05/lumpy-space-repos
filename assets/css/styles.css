@@ -13,17 +13,18 @@ body{
   margin: 0;
   background: white;
   text-align: center;
-  font-family: sans-serif;
+  font-family: 'helvetica', sans-serif;
 }
 
-
+.fa-github{
+  color: black;
+}
 
 /*HEADER*/
 .header{
   background-color: #f5f5f5;
   border-bottom: solid 1px #c6c6c6;
   position: relative;
-  padding: .5em;
   font-size: .9em;
 }
 
@@ -62,6 +63,7 @@ a:hover{
 /*CONTENT*/
 
 .sidebarWrapper{
+  text-align: left;
   display: inline-block;
   width: 20%;
   margin-top: 1em;
@@ -72,10 +74,19 @@ a:hover{
   padding-bottom: .2em;
 }
 
-img{
+#smallPic{
+  background-color: plum;
+  width: 20px;
+  height: 20px;
+  border-radius: 4px;
+}
+
+#profPic{
+  text-align: left;
+  border-radius: 10px;
   background-color: plum;
   width: 250px;
-  height: 200px;
+  height: 250px;
   padding-top: 1em;
 }
 
@@ -95,7 +106,7 @@ img{
 }
 
 h1{
-  font-weight: bold;
+  font-weight: 600;
   font-size: 2em;
   text-align: left;
   padding-bottom: .2em;
@@ -104,6 +115,8 @@ h1{
 h3{
   font-size: 1.5em;
   text-align: left;
+  color:#909090;
+  font-weight: 100;
 }
 
 .octocatInfo{
@@ -113,9 +126,19 @@ h3{
   border-bottom: solid .09em #ddd;
 }
 
-
 .octocatInfo i{
   margin: 0 1em 0 0;
+  color: #909090;
+  text-align: left;
+}
+
+.octocatInfo:not(i){
+  text-align:left;
+  margin: .25em;
+}
+
+.infoText{
+  padding-left: .25em;
 }
 
 .octaStats{
@@ -124,13 +147,31 @@ h3{
 }
 
 .bigStats{
-  padding-top: .2em;
+  padding: .2em 0 0 .28em;
+  font-size: 2em;
+  font-weight: 600;
+  color: #4078c0;
+  display: flex;
+}
+
+.bigStats li{
+  padding: .2em .6em .2em .1em;
+}
+
+.bigStats:hover{
+  cursor: pointer;
 }
 
 .littleStats{
-  padding-top: .6em;
+  padding: 0 .3em 0 .3em;
   float: left;
-  padding-left: none;
+  display: flex;
+  font-weight: 100;
+  font-size: .7em;
+}
+
+.littleStats li{
+  padding: 0 .45em 0 .45em;
 }
 
 /*MIDDLE WRAPPERS*/
@@ -140,7 +181,7 @@ h3{
   width: 50%;
 }
 .midNavbar_wrap{
-  margin-bottom: 1em;
+  padding-bottom: 1em;
   position: relative;
 }
 
@@ -150,8 +191,9 @@ h3{
 
 
 #midNavbar_left{
+  /*border: 1px solid grey;*/
   float: left;
-  margin: 1em 1em 1em 0;
+  padding: 0.25em 0 1.25em 0;
 }
 
 #midNavbar_left:hover{
@@ -166,8 +208,9 @@ a:hover{
   color: #4078c0;
 }
 #midNavbar_right{
+  /*border: 1px solid grey;*/
   display: inline-flex;
-  margin: 1em;
+  padding: 1em;
 }
 
 #midNavbar_right > li{
@@ -217,8 +260,8 @@ h4{
   color: #4078c0;
 }
 
-i{
-  color: black;
+.popRepos i{
+  color: #909090;
 }
 
 .popBooki:before{
