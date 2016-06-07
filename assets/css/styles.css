@@ -33,6 +33,10 @@ body{
   display: inline-block;
 }
 
+.SBuser_info{
+  display:inline-block;
+}
+
 .searchBox{
   box-shadow: 1px 1px 1px 1px #dddddd inset;
   width: 250px;
@@ -41,6 +45,7 @@ body{
   border-radius: 2px;
   margin: .25em;
   padding: .6em .3em .6em .3em;
+
 }
 
 .topNavlink{
@@ -85,6 +90,9 @@ a:hover{
 }
 
 .contentWrapper{
+  width: 80%;
+  margin: 0 auto;
+  padding: 1em;
 }
 
 .sidebarWrapper{
@@ -175,7 +183,7 @@ h3{
   font-size: 1em;
   font-weight: 600;
   color: #4078c0;
-  display: flex;
+  display: inline-block;
 }
 
 .stats li{
@@ -198,7 +206,7 @@ h3{
 .lilStats{
   padding: 0 .3em 0 .3em;
   float: left;
-  display: flex;
+  display: ;
   font-weight: 100;
   font-size: .7em;
 }
@@ -214,7 +222,7 @@ h3{
   display: inline-block;
 }
 .midNavbar_wrap{
-  display: inline-block;
+  padding-bottom: 1em;
   position: relative;
 }
 
@@ -224,54 +232,42 @@ h3{
 
 
 #midNavbar_left{
-  padding: 1.25em;
-  margin: .5em 0;
-  vertical-align: top;
-  display: inline-block;
-  border: 1px solid grey;
+  /*border: 1px solid grey;*/
+  float: left;
+  padding: 0.25em 0 1.25em 0;
 }
 
 #midNavbar_left:hover{
-  display: inline-block;
   cursor: pointer;
 }
 #midNavbar_left > li{
-  border: 1px solid black;
   display: inline-block;;
+  padding-left: 1em;
 }
 a:hover{
   cursor: pointer;
   color: #4078c0;
 }
 #midNavbar_right{
+  /*border: 1px solid grey;*/
+  display: inline-flex;
   padding: 1em;
-  margin: .5em 0 0.5em -0.25em;
-  vertical-align: top;
-  border: 1px solid grey;
-  display: inline-block;
 }
 
 #midNavbar_right > li{
-  border: 1px solid black;
-  display: inline-block;
   padding: 0 .4em;
 }
 
 #followButton{
-  text-shadow: 0.3px 0.3px grey;
-  box-shadow: 1px 1px 3px 3px #6fcb4e inset;
   padding: .2em .4em;
   background-color: #7fd162;
   color: white;
   font-size: 1em;
   font-weight: bold;
   border-radius: 3px;
-  border: 1px solid #55b234;
+  border: 1px solid #c6c6c6;
 }
-
 #blockButton{
-  text-shadow: 0.3px 0.3px grey;
-  box-shadow: 0px 0px 1px 0px #c6c6c6 inset;
   padding: .2em .4em;
   background-color: #f5f5f5;
   color: black;
@@ -292,7 +288,7 @@ a:hover{
 h4{
   color: black;
   position: relative;
-  padding: 0.7em 0 0.7em 1em;
+  padding: 0.7em 0 0.7em 0;
   text-align: left;
   font-weight: bold;
   background-color: #dddddd;
@@ -315,11 +311,12 @@ h4{
 
 .repoBooki{
   padding-right: 0.5em;
+  margin-top: 1em;
 }
 
 .popInfo{
   border-bottom: 1px solid #c6c6c6;
-  padding: 0 0 1em 3em;
+  padding-left: 3em;
   text-align: left;
   color: #848484;
   font-weight: lighter;
