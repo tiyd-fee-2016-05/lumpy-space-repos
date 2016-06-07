@@ -75,14 +75,21 @@ a:hover{
 
 
 /*CONTENT*/
+.mainWrap{
+  display: block;
+  width: 100%;
+}
+
+.contentWrapper{
+  width: 80%;
+  margin: 0 auto;
+  padding: 1em;
+}
 
 .sidebarWrapper{
-  text-align: left;
   display: inline-block;
-  width: 20%;
-  float: left;
   margin: 1em 0 2em 0;
-  padding-left: 0;
+  padding: 1em;
 }
 
 .picBorder{
@@ -104,8 +111,6 @@ a:hover{
   background-color: plum;
   width: 250px;
   height: 250px;
-  padding: 1em 0 0 0;
-  margin: 1em 10em 0 0;
 }
 
 img:hover{
@@ -199,9 +204,9 @@ h3{
 
 /*MIDDLE WRAPPERS*/
 .miniWrapper{
+  vertical-align: top;
   position: relative;
   display: inline-block;
-  width: 50%;
 }
 .midNavbar_wrap{
   padding-bottom: 1em;
