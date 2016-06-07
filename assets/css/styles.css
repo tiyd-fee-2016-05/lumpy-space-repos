@@ -70,8 +70,8 @@ a:hover{
 
 .sidebarWrapper{
   float: left;
-  margin-left: 3em;
-  border: solid green 2px;
+  margin-left: 2em;
+  padding-left: 0;
 }
 
 .picBorder{
@@ -81,10 +81,13 @@ a:hover{
 
 img{
   width: 250px;
-  height: 200px;
-  padding-top: 1em;
-  margin-right: 8em;
-  border: solid red 2px;
+  height: 230px;
+  padding: 1em 0 0 0;
+  margin-right: 10em;
+}
+
+img:hover{
+  cursor: pointer;
 }
 
 #githubLG{
@@ -92,8 +95,9 @@ img{
   padding-left: 3em;
 }
 
+
 h1{
-  font-weight: bold;
+  font-weight: 600;
   font-size: 2em;
   text-align: left;
   padding-bottom: .2em;
@@ -102,6 +106,8 @@ h1{
 h3{
   font-size: 1.5em;
   text-align: left;
+  color:#909090;
+  font-weight: 100;
 }
 
 .octocatInfo{
@@ -114,11 +120,16 @@ h3{
 .octocatInfo i{
   margin: 0 1em 0 0;
   color: #909090;
-  text-align: right;
+  text-align: left;
 }
 
 .octocatInfo:not(i){
-  text-align: left justify;
+  text-align:left;
+  margin: .25em;
+}
+
+.infoText{
+  padding-left: .25em;
 }
 
 .octaStats{
