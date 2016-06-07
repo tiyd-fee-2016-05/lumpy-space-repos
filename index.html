@@ -12,33 +12,38 @@
 <!-- HEADER -->
     <div class = "header">
       <span id="githubLG"><i class="fa fa-github fa-2x" aria-hidden="true"></i></span>
-      <form>
+      <form id="topSearch">
         <input class="searchBox" placeholder="Search GitHub"></input>
       </form>
-    <div>
+    <div class="navLinks">
       <ul class="topNavbar">
         <li class="topNavlink"><a href="#">Pull requests</a></li>
         <li class="topNavlink"><a href="#">Issues</a></li>
         <li class="topNavlink"><a href="#">Gist</a></li>
+        <li class ="plus"><i class="fa fa-plus" aria-hidden="true"></i><li>
+        <li><span><img id="smallPic" src="https://assets-cdn.github.com/images/modules/logos_page/Octocat.png" alt="" /></span></li>
       </ul>
 
     </div>
-    <div>
+    <div class="rightNav">
       <!-- Plus icon -->
-      <span>+</span>
-      <span> img </span>
+      <div class ="plus"><i class="fa fa-plus" aria-hidden="true"></i>
+      <span><img id="smallPic" src="https://assets-cdn.github.com/images/modules/logos_page/Octocat.png" alt="" /></span>
     </div>
   </div>
+
+<div class="mainWrap">
+
 
 <!-- setting up grid draft -->
 <div class="contentWrapper">
 
 <!-- SIDEBAR -->
   <div class="sidebarWrapper">
-    <img src="https://assets-cdn.github.com/images/modules/logos_page/Octocat.png" alt="" />
+    <img id="profPic" src="https://assets-cdn.github.com/images/modules/logos_page/Octocat.png" alt="" />
 
     <div class="picBorder">
-      <h1>The Octospacecat</h1>
+      <h1>The Octocat</h1>
       <h3>octocat</h3>
     </div>
 
@@ -61,7 +66,7 @@
       <li class = "bigStats">2</li>
         <li class = "littleStats">Starred</li>
       <li class = "bigStats">6</li>
-      <li class = "littleStats">Following</li>
+        <li class = "littleStats">Following</li>
 
     </ul>
 
@@ -71,14 +76,14 @@
   <div class = "miniWrapper">
     <div class="midNavbar_wrap">
       <ul id="midNavbar_left">
-        <li>ICON | Contributions</li>
-        <li>ICON | Repositories</li>
-        <li>ICON | Public Activity</li>
+        <li><i class="fa fa-male repoBooki" aria-hidden="true"></i>Overview</li>
+        <li><i class="fa fa-book repoBooki" aria-hidden="true"></i>Repositories</li>
+        <li><i class="fa fa-rss repoBooki" aria-hidden="true"></i>Public Activity</li>
       </ul>
 
       <ul id="midNavbar_right">
-        <li><button type ="button">Follow</button></li>
-        <li><button type="button">Block or report</button>
+        <li><button type ="button" id="followButton">Follow</button></li>
+        <li><button type="button" id="blockButton">Block or report</button>
           <div class="miniModal">
           <!--PUT MODAL HERE-->
           </div>
@@ -90,19 +95,19 @@
       <h4>Popular repositories</h4>
       <ul>
 
-        <li class="popRepos"><i class="fa fa-book" aria-hidden="true"></i>Fin the human</li>
+        <li class="popRepos"><i class="fa fa-book popBooki" aria-hidden="true"></i>Fin the human</li>
           <li class="popInfo">Fin is a human</li>
 
-        <li class="popRepos"><i class="fa fa-book" aria-hidden="true"></i>Jake the dog</li>
+        <li class="popRepos"><i class="fa fa-book popBooki" aria-hidden="true"></i>Jake the dog</li>
           <li class="popInfo">Jake is a dog</li>
 
-        <li class="popRepos"><i class="fa fa-book" aria-hidden="true"></i>Princess Bubblegum</li>
+        <li class="popRepos"><i class="fa fa-book popBooki" aria-hidden="true"></i>Princess Bubblegum</li>
           <li class="popInfo">Princess is bubblegum</li>
 
-        <li class="popRepos"><i class="fa fa-book" aria-hidden="true"></i>Lumpy Space Princess</li>
+        <li class="popRepos"><i class="fa fa-book popBooki" aria-hidden="true"></i>Lumpy Space Princess</li>
           <li class="popInfo">Space is lumpy</li>
 
-        <li class="popRepos"><i class="fa fa-book" aria-hidden="true"></i>Beemo</li>
+        <li class="popRepos"><i class="fa fa-book popBooki" aria-hidden="true"></i>Beemo</li>
           <li class="popInfo">Beemo is the $*#!</li>
 
       </ul>
@@ -113,7 +118,7 @@
   </div>
 
 </div>
-
+</div>
 
   </body>
 </html>
