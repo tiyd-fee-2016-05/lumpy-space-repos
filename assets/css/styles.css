@@ -170,28 +170,32 @@ h3{
   padding-left: .25em;
 }
 
-.octaStats{
-  padding-top: .20em;
-  display: flex;
-}
-
-.bigStats{
-  padding: .2em 0 0 .28em;
-  font-size: 2em;
+.stats{
+  text-align: center;
+  font-size: 1em;
   font-weight: 600;
   color: #4078c0;
   display: flex;
 }
 
-.bigStats li{
-  padding: .2em .6em .2em .1em;
+.stats li{
+  padding: 1em;
 }
 
-.bigStats:hover{
+.stats:hover{
   cursor: pointer;
 }
 
-.littleStats{
+.li_stats{
+  display: block;
+}
+
+.bigStats{
+  font-size: 2em;
+  display: block;
+}
+
+.lilStats{
   padding: 0 .3em 0 .3em;
   float: left;
   display: flex;
@@ -199,7 +203,7 @@ h3{
   font-size: .7em;
 }
 
-.littleStats li{
+.lilStats li{
   padding: 0 .45em 0 .45em;
 }
 
