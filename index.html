@@ -50,20 +50,20 @@
 
     <div>
     <ul class = "octocatInfo">
-      <li><i class="fa fa-users" aria-hidden="true"></i>GitHub</li>
-      <li><i class="fa fa-map-marker" aria-hidden="true"></i>  <text class = "infoText">Durham </text></li>
-      <li><i class="fa fa-envelope-o" aria-hidden="true"></i><text class = "infoText">lumpyspace@github.com</text></li>
-      <li><i class="fa fa-link" aria-hidden="true"></i><text class = "infoText">http://www.github.com/blog</text></li>
-      <li><i class="fa fa-clock-o" aria-hidden="true"></i>Joined today</li>
+      <li><i class="fa fa-users" aria-hidden="true"></i><%- m.company %></li>
+      <li><i class="fa fa-map-marker" aria-hidden="true"></i><text class = "infoText"><%- m.location %></text></li>
+      <li><i class="fa fa-envelope-o" aria-hidden="true"></i><text class = "infoText"><%- m.email %></text></li>
+      <li><i class="fa fa-link" aria-hidden="true"></i><text class = "infoText"><%- m.blog %></text></li>
+      <li><i class="fa fa-clock-o" aria-hidden="true"></i><%- m.created_at %></li>
     </ul>
   </div>
 
       <!--Octospacecat's Stats, Yo-->
 
     <ul class = "bigStats">
-      <li>1.4k</li>
+      <li><%- m.followers %></li>
       <li>2</li>
-      <li>6</li>
+      <li><%- m.following %></li>
     </ul>
 
     <ul class = "littleStats">

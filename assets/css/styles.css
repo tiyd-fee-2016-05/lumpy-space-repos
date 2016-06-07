@@ -74,6 +74,10 @@ a:hover{
 }
 
 
+.SBuser_info{
+  display: inline-block;
+}
+
 /*CONTENT*/
 .mainWrap{
   display: block;
