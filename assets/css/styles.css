@@ -16,15 +16,19 @@ body{
 }
 
 
+
 /*HEADER*/
 .header{
-  /*padding: 1em;*/
-  display: flex;
   background-color: #dddddd;
+  position: relative;
 }
 
 .topNavbar{
   display: flex;
+}
+
+#topSearch{
+  display: inline-block;
 }
 
 .searchBox{
@@ -54,8 +58,9 @@ a:hover{
 /*CONTENT*/
 
 .sidebarWrapper{
-  float: left;
-  margin-left: 3em;
+  display: inline-block;
+  width: 20%;
+  margin-top: 1em;
 }
 
 .picBorder{
@@ -64,13 +69,23 @@ a:hover{
 }
 
 img{
+  background-color: plum;
   width: 250px;
   height: 200px;
   padding-top: 1em;
 }
 
 #githubLG{
+  display: inline-block;
   padding-right: 1em;
+}
+
+.navLinks{
+  display: inline-block;
+}
+
+.rightNav{
+  display: inline-block;
 }
 
 h1{
@@ -112,23 +127,45 @@ h3{
   padding-left: none;
 }
 
-/*MIDDLE NAV BAR*/
+/*MIDDLE WRAPPERS*/
+.miniWrapper{
+  position: relative;
+  display: inline-block;
+  width: 50%;
+}
 .midNavbar_wrap{
-
+  position: relative;
 }
 
+/*MIDDLE NAV BAR*/
+
+
+
+
+#midNavbar_left{
+  float: left;
+  margin: 1em;
+}
+
+#midNavbar_left:hover{
+  cursor: pointer;
+}
 #midNavbar_left > li{
   display: inline-block;;
+
 }
-
+a:hover{
+  cursor: pointer;
+  color: #4078c0;
+}
 #midNavbar_right{
-
+  display: inline-flex;
+  margin: 1em;
 }
 
 
 /*POPULAR REPOSITORIES*/
 .repoRapper{
-  margin: 1em 10em;
   border: 1px solid #c6c6c6;
 }
 
@@ -139,6 +176,7 @@ h4{
 }
 
 .popRepos{
+  padding: 1em .5em 0.4em 0.5em;
   text-align: left;
   font-weight: bold;
   color: #4078c0;
@@ -148,12 +186,17 @@ i{
   color: black;
 }
 
-.fa-book:before{
-  margin: 1em;
+.popBooki:before{
+  margin: 0 1em 0 0;
+}
+
+.repoBooki{
+  margin-top: 1em;
 }
 
 .popInfo{
-  padding-left: 2em;
+  border-bottom: 1px solid #c6c6c6;
+  padding-left: 3em;
   text-align: left;
   color: #848484;
   font-weight: lighter;
