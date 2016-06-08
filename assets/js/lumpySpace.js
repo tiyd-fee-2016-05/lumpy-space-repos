@@ -29,3 +29,16 @@ $(function () {
     $('.SBuser_info').html(fn(model));
     }
 });
+
+$.getJSON('new api source') + repos)
+  .done(showRepo);
+
+//SHOW REPO ATTEMPT
+
+  // var views = {};
+  //
+  // $('script[type="text/html"]').each(function () {
+  //   var repos = $(this);
+  //   views[repos.attr('id')] = _.template(script.html(), { variable: 'm' });
+  //   repos.remove();
+  // });
