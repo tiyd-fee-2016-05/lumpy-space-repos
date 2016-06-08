@@ -18,6 +18,7 @@ $(function () {
 //gh-user-template function
   function showUser(user) {
     show('gh-user-template', user);
+    showA('gh-avatar-template', user);  //Instead of adding an entire new showAvatar function. You can add combine them here.
   }
 //ERROR MESSAGE
   function showError(req, status, err) {
@@ -30,6 +31,20 @@ $(function () {
   function show (template, model) {
     var fn = _.template($('#' + template).html(), {
       variable: 'm'});
-    $('.SBuser_info').html(fn(model));
+    $('.SBuser_info').html(fn(model));   //assigning location if successful 
     }
+
+// gh-avatar-template
+  // TRY1
+    //DON'T NEED THIS ANYMORE SINCE WE ADDED showA to the template above (showUser)
+      // function showAvatar(a) {
+      //   showA('gh-avatar-template', a);
+      // }
+
+  function showA (template, model) {      //need unique function name to run both together w/o conflict
+    var fn = _.template($('#' + template).html(), {
+      variable: 'm'});
+    $('.NBuser_info').html(fn(model));   //corresponds with the empty DIV location upon input
+    }
+
   });
