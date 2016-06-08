@@ -28,6 +28,7 @@ $(function () {
       variable: 'm'});
     $('.SBuser_info').html(fn(model));
     }
+<<<<<<< 724a3f41e923e6d33e26a70c23eb2a4d39f4c061
 });
 
 $.getJSON('new api source') + repos)
@@ -42,3 +43,6 @@ $.getJSON('new api source') + repos)
   //   views[repos.attr('id')] = _.template(script.html(), { variable: 'm' });
   //   repos.remove();
   // });
+=======
+  });
+>>>>>>> Full page layout draft1
