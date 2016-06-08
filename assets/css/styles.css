@@ -99,7 +99,6 @@ a:hover{
 }
 
 .contentWrapper{
-  width: 80%;
   margin: 0 auto;
   padding: 1em;
 }
@@ -257,7 +256,7 @@ img:hover{
 }
 #midNavbar_left > li{
   margin: 1em -0.2em;
-  padding: 1em 1em;
+  padding: 0em 1em 1em 1em;
   /*border: 1px solid grey;*/
   display: inline-block;;
   padding-left: 1em;
@@ -283,7 +282,7 @@ a:hover{
 }
 #midNavbar_right{
   padding: 0.75em 0em .75em 6em;
-  margin: 1em -.1em;
+  margin: 1em 0 0 -.1em;
   border-bottom: 1px solid #c6c6c6;
   vertical-align: top;
   /*border: 1px solid grey;*/
