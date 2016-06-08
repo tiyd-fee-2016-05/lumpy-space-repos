@@ -52,9 +52,19 @@ body{
 .plus{
   color: black;
   display: inline-block;
-  margin-left: 30em;
+  margin-left: 25em;
   padding: .5em 1em 0 0;
   font-weight: lighter;
+}
+
+.smallAvatar i{
+  vertical-align: super;
+  color: black;
+  display: inline-block;
+}
+
+.fa-caret-down{
+  padding: 0 .25em;
 }
 
 .lumpySpace{
@@ -135,18 +145,27 @@ img:hover{
   display: inline-block;
 }
 
-h1{
+#lo_name{
   font-weight: 600;
-  font-size: 2em;
+  font-size: 1.5em;
   text-align: left;
-  padding-bottom: .2em;
+  padding: 0.4em 0 .2em 0;
 }
 
-h3{
-  font-size: 1.5em;
+#lo_login{
+  padding-bottom: 0.5em;
+  font-size: 1.25em;
   text-align: left;
   color:#909090;
   font-weight: 100;
+}
+
+.fa-map-marker{
+  padding-left: .2em;
+}
+
+.fa-envelope-o{
+  margin-right: -.2em;
 }
 
 .octocatInfo{
@@ -157,14 +176,9 @@ h3{
 }
 
 .octocatInfo i{
-  margin: 0 1em 0 0;
+  padding: .25em 1em .25em 0;
+  /*margin: 0 1em 0 0;*/
   color: #909090;
-  text-align: left;
-}
-
-.octocatInfo:not(i){
-  text-align:left;
-  margin: .25em;
 }
 
 .infoText{
@@ -180,7 +194,8 @@ h3{
 }
 
 .stats li{
-  padding: 1em;
+  padding: 0 1em 1em;
+  border-bottom: solid .09em #ddd;
 }
 
 .stats:hover{
@@ -192,15 +207,17 @@ h3{
 }
 
 .bigStats{
+  padding: .33em;
   font-size: 2em;
   display: block;
 }
 
 .lilStats{
+  color: grey;
   padding: 0 .3em 0 .3em;
   float: left;
   display: flex;
-  font-weight: 100;
+  font-weight: 400;
   font-size: .7em;
 }
 
@@ -258,7 +275,7 @@ a:hover{
   color: #4078c0;
 }
 #midNavbar_right{
-  padding: 0.75em 0em .6em 10em;
+  padding: 0.75em 0em .8em 6em;
   margin: 1em -.1em;
   border-bottom: 1px solid #c6c6c6;
   vertical-align: top;
@@ -273,7 +290,7 @@ a:hover{
 }
 
 #followButton{
-  text-shadow: 0.3px 0.3px black;
+  text-shadow: 0.3px 0.3px grey;
   box-shadow: 0px 0px 5px 2px #5cc038 inset;
   padding: .25em .5em;
   background-color: #7fd162;
@@ -282,6 +299,13 @@ a:hover{
   font-weight: 500;
   border-radius: 3px;
   border: 1px solid #55b234;
+}
+
+#followButton p{
+  font-size: .8em;
+}
+#blockButton p{
+  font-size: .8em;
 }
 
 #blockButton{
@@ -295,7 +319,13 @@ a:hover{
   border-radius: 3px;
   border: 1px solid #c6c6c6;
 }
-
+#infobutton{
+  font-size: 0.1em;
+  color: grey;
+  background-color: white;
+  border: 0.2em solid grey;
+  border-radius: 50%;
+}
 
 
 /*POPULAR REPOSITORIES*/
@@ -339,4 +369,20 @@ h4{
   color: #848484;
   font-weight: lighter;
   font-size: .8em;
+}
+
+.fa-star{
+  padding: 0 0.25em;
+}
+
+.stars{
+  margin-top: 0.5em;
+  float: right;
+  display: inline-flex;
+}
+.stars p{
+  color: grey;
+  padding: 0.2em .2em;
+  font-size: 0.8em;
+  font-weight: 500;
 }

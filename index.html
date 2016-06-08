@@ -22,8 +22,9 @@
         <li class="topNavlink"><a href="#">Pull requests</a></li>
         <li class="topNavlink"><a href="#">Issues</a></li>
         <li class="topNavlink"><a href="#">Gist</a></li>
-        <li class ="plus"><i class="fa fa-plus" aria-hidden="true"></i><li>
-        <li><span><img id="smallPic" src="https://assets-cdn.github.com/images/modules/logos_page/Octocat.png" alt="" /></span></li>
+        <li class ="plus"><i class="fa fa-plus" aria-hidden="true"></i><i class="fa fa-caret-down" aria-hidden="true"></i></li>
+        <li class ="smallAvatar"><img id="smallPic" src="https://assets-cdn.github.com/images/modules/logos_page/Octocat.png" alt="" /><i class="fa fa-caret-down" aria-hidden="true"></i></li>
+
       </ul>
 
     </div>
@@ -38,6 +39,7 @@
 <!-- SIDEBAR -->
 <div class="SBuser_info">
 </div>
+
 <script id="gh-user-template" type="text/html">
 
   <div class="sidebarWrapper">
@@ -83,12 +85,13 @@
       </ul>
 
       <ul id="midNavbar_right">
-        <li><button type ="button" id="followButton"><span>Follow</span></button></li>
-        <li><button type="button" id="blockButton"><span>Block or report</span></button>
+        <li><button type ="button" id="followButton"><p>Follow</p></button></li>
+        <li><button type="button" id="blockButton"><p>Block or report</p></button>
           <div class="miniModal">
           <!--PUT MODAL HERE-->
           </div>
         </li>
+        <li><button type="button" id="infobutton"><i class="fa fa-info" aria-hidden="true"></i></button></li>
       </ul>
     </div>
 
@@ -96,19 +99,24 @@
       <h4>Popular repositories</h4>
       <ul>
 
-        <li class="popRepos"><i class="fa fa-book popBooki" aria-hidden="true"></i>Fin the human</li>
+        <li class="popRepos"><i class="fa fa-book popBooki" aria-hidden="true"></i>Fin the human
+          <span class="stars"><p>1,245</p><i class="fa fa-star" aria-hidden="true"></i></span></li>
           <li class="popInfo">Fin is a human</li>
 
-        <li class="popRepos"><i class="fa fa-book popBooki" aria-hidden="true"></i>Jake the dog</li>
+        <li class="popRepos"><i class="fa fa-book popBooki" aria-hidden="true"></i>Jake the dog
+          <span class="stars"><p>345</p><i class="fa fa-star" aria-hidden="true"></i></span></li>
           <li class="popInfo">Jake is a dog</li>
 
-        <li class="popRepos"><i class="fa fa-book popBooki" aria-hidden="true"></i>Princess Bubblegum</li>
+        <li class="popRepos"><i class="fa fa-book popBooki" aria-hidden="true"></i>Princess Bubblegum
+          <span class="stars"><p>45</p><i class="fa fa-star" aria-hidden="true"></i></span></li>
           <li class="popInfo">Princess is bubblegum</li>
 
-        <li class="popRepos"><i class="fa fa-book popBooki" aria-hidden="true"></i>Lumpy Space Princess</li>
+        <li class="popRepos"><i class="fa fa-book popBooki" aria-hidden="true"></i>Lumpy Space Princess
+          <span class="stars"><p>15</p><i class="fa fa-star" aria-hidden="true"></i></span></li>
           <li class="popInfo">Space is lumpy</li>
 
-        <li class="popRepos"><i class="fa fa-book popBooki" aria-hidden="true"></i>Beemo</li>
+        <li class="popRepos"><i class="fa fa-book popBooki" aria-hidden="true"></i>Beemo
+          <span class="stars"><p>4</p><i class="fa fa-star" aria-hidden="true"></i></span></li>
           <li class="popInfo">Beemo is the $*#!</li>
 
       </ul>

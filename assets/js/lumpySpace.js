@@ -14,7 +14,7 @@ $(function () {
     $.getJSON('https://api.github.com/users/' + ghSidebar)
       .done(showUser);
   });
-
+//gh-user-template function
   function showUser(user) {
     show('gh-user-template', user);
   }
@@ -24,4 +24,4 @@ $(function () {
       variable: 'm'});
     $('.SBuser_info').html(fn(model));
     }
-});
+  });
