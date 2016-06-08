@@ -33,6 +33,10 @@ body{
   display: inline-block;
 }
 
+.SBuser_info{
+  display:inline-block;
+}
+
 .searchBox{
   box-shadow: 0px 0px 4px 1px #eeeeee inset;
   width: 30em;
@@ -95,6 +99,9 @@ a:hover{
 }
 
 .contentWrapper{
+  width: 80%;
+  margin: 0 auto;
+  padding: 1em;
 }
 
 .sidebarWrapper{
@@ -190,7 +197,7 @@ img:hover{
   font-size: 1em;
   font-weight: 600;
   color: #4078c0;
-  display: flex;
+  display: inline-block;
 }
 
 .stats li{
@@ -246,7 +253,6 @@ img:hover{
 }
 
 #midNavbar_left:hover{
-  display: inline-block;
   cursor: pointer;
 }
 #midNavbar_left > li{
@@ -254,6 +260,7 @@ img:hover{
   padding: 1em 1em;
   /*border: 1px solid grey;*/
   display: inline-block;;
+  padding-left: 1em;
 }
 
 #overview{
@@ -298,7 +305,7 @@ a:hover{
   font-size: 1em;
   font-weight: 500;
   border-radius: 3px;
-  border: 1px solid #55b234;
+  border: 1px solid #c6c6c6;
 }
 
 #followButton p{
@@ -340,7 +347,7 @@ a:hover{
 h4{
   color: black;
   position: relative;
-  padding: 0.7em 0 0.7em 1em;
+  padding: 0.7em 0 0.7em 0;
   text-align: left;
   font-weight: bold;
   background-color: #dddddd;
@@ -363,11 +370,12 @@ h4{
 
 .repoBooki{
   padding-right: 0.5em;
+  margin-top: 1em;
 }
 
 .popInfo{
   border-bottom: 1px solid #c6c6c6;
-  padding: 0 0 1em 3em;
+  padding-left: 3em;
   text-align: left;
   color: #848484;
   font-weight: lighter;
