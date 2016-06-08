@@ -56,18 +56,36 @@ $(function () {
     }
 
 //SHOW REPOSITORIES
-  function showRepo(repo) {               //this API looks like it is in an array - for loop needed to capture each element
-    for (r=0; r<showRepo.length; r++){    //
-      showR('gh-repo-template', repo[r]); //print what is found when the for loop block of code is run.
-      console.log(repo[r]);
-    //this prints the object and it's array. if we're able to assign the object a variable, we can pull out the object information with obj.name
-    }
+
+  function showRepo(repo) {
+    showR('gh-repo-template', repo);
   }
 
-  function showR (template, model) {
-    var fn = _.template($('#' + template).html(), {
-      variable: 'r'});
-    $('.repo_info').html(fn(model));
-    }
+//applying the information from the lo_dash lesson - attempting to set up partials working with multiple templates
 
+  function showR (name) {
+    var repos = {}; 
+    $('script[type="text/html"]').each(function () {
+      var script = $(this);
+      repos[script.attr('id')] = _.template(script.html(), { variable: 'r'});
+      script.remove();
+    $('repo_info').html(repos(name));
+  })
+
+  };
+
+  // function showRepo(repo) {               //this API looks like it is in an array - for loop needed to capture each element
+  //   for (r=0; r<showRepo.length; r++){    //
+  //     showR('gh-repo-template', repo[r]); //print what is found when the for loop block of code is run.
+  //     console.log(repo[r]);
+  //   //this prints the object and it's array. if we're able to assign the object a variable, we can pull out the object information with obj.name
+  //   }
+  // }
+  //
+  // function showR (template, model) {
+  //   var fn = _.template($('#' + template).html(), {
+  //     variable: 'r'});
+  //   $('#repo_info').html(fn(model));
+  //   }
+  //
   });
