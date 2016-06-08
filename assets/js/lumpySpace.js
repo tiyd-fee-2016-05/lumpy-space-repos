@@ -18,7 +18,7 @@ $(function () {
     $.getJSON('https://api.github.com/users/' + ghSidebar)
       .done(showUser);
   });
-
+//gh-user-template function
   function showUser(user) {
     show('gh-user-template', user);
   }
@@ -28,6 +28,7 @@ $(function () {
       variable: 'm'});
     $('.SBuser_info').html(fn(model));
     }
+<<<<<<< HEAD
 });
 
 //NavBar//
@@ -52,3 +53,6 @@ $(function () {
     $('.SBuser_info').html(fn(model));
     }
 });
+=======
+  });
+>>>>>>> 5a9c9e9c0be6742c7578c811c87e33797043d9ec
