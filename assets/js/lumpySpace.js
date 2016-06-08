@@ -12,11 +12,19 @@ $(function () {
     var ghSidebar = $('input[class="searchBox"]').val();
 
     $.getJSON('https://api.github.com/users/' + ghSidebar)
-      .done(showUser);
+      .done(showUser)
+      .fail(showError);
   });
 //gh-user-template function
   function showUser(user) {
     show('gh-user-template', user);
+  }
+//ERROR MESSAGE
+  function showError(req, status, err) {
+    err = err || {};
+    err.message = err.message || status;
+    console.log(err);
+    show('gh-error-template', { message: err });
   }
 
   function show (template, model) {
