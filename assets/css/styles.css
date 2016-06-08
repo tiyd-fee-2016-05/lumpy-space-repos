@@ -52,7 +52,7 @@ body{
 .plus{
   color: black;
   display: inline-block;
-  margin-left: 25em;
+  margin-left: 20em;
   padding: .5em 1em 0 0;
   font-weight: lighter;
 }
@@ -286,7 +286,7 @@ a:hover{
 #midNavbar_right > li{
   /*border: 1px solid black;*/
   display: inline-block;
-  padding: 0 .4em;
+  padding: 0 .2em;
 }
 
 #followButton{
