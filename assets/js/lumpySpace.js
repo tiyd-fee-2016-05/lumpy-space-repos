@@ -5,7 +5,6 @@ $(function(){
 var x = 1;
 console.log(x);
 
-
 // INPUT FUNCTION ASSIGNMENT
 
 $(function () {
@@ -57,6 +56,7 @@ $(function () {
       variable: 'm'});
     $('.NBuser_info').html(fn(model));   //corresponds with the empty DIV location upon input
     }
+
 
 //SHOW REPOSITORIES
 
