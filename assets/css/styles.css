@@ -317,6 +317,13 @@ a:hover{
   display: flex;
 }
 
+#followButton p{
+  font-size: .8em;
+}
+#blockButton p{
+  font-size: .8em;
+}
+
 #blockButton{
   text-shadow: 0.3px 0.3px grey;
   box-shadow: 0px 0px 5px 2px #eeeeee inset;

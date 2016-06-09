@@ -5,7 +5,9 @@ $(function(){
 var x = 1;
 console.log(x);
 
+
 // INPUT FUNCTION ASSIGNMENT
+
 $(function () {
   $('#topSearch').on('submit', function(e) {
     e.preventDefault();
