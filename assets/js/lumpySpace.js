@@ -20,6 +20,7 @@ $(function () {
 // REPO API AJAX CALL
     $.getJSON('https://api.github.com/users/' + ghSidebar + '/repos')
       .done(showRepo);
+
   });
 
 //gh-user-template function
@@ -57,9 +58,9 @@ $(function () {
 
 //SHOW REPOSITORIES
 
-  function showRepo(repo) {
-    showR('gh-repo-template', repo);
-  }
+  // function showRepo(repo) {
+  //   showR('gh-repo-template', repo);
+  // }
 
 //applying the information from the lo_dash lesson - attempting to set up partials working with multiple templates
 
@@ -75,10 +76,22 @@ $(function () {
 
   // };
 
+//////notes///////
+/*  the console.log(repo) displays an array of objects as the
+    for loop iterates through each showR. The script id
+    gh-repo-template in the HTML file links each object to the
+    skull tags <%- r.name %> which assigns the name of the object
+    in the JSON file at $.getJSON('https://api.github.com/users/' + ghSidebar + '/repos')
+
+    need to get different names in showR
+*/
+
   function showRepo(repo) {               //this API looks like it is in an array - for loop needed to capture each element
     for (r=0; r<showRepo.length; r++){    //
       showR('gh-repo-template', repo[r]); //print what is found when the for loop block of code is run.
-      console.log(repo[r]);
+      console.log(repo);
+      var skullName = repo;
+      _.map(repo, 'name')
     //this prints the object and it's array. if we're able to assign the object a variable, we can pull out the object information with obj.name
     }
   }
@@ -87,6 +100,15 @@ $(function () {
     var fn = _.template($('#' + template).html(), {
       variable: 'r'});
     $('#repo_info').html(fn(model));
+    // _.map(model)
+    console.log(model);
     }
 
   });
+
+
+
+
+//https://leanpub.com/lodashcookbook/read#leanpub-auto-v3-filter-an-objects-properties
+//http://api.jquery.com/jquery.parsejson/
+//https://parse.com/questions/getting-at-parse-properties-in-underscore-templates
