@@ -196,7 +196,7 @@ img:hover{
   font-size: 1em;
   font-weight: 600;
   color: #4078c0;
-  display: inline-block;
+  display: flex;
 }
 
 .stats li{
@@ -322,6 +322,9 @@ a:hover{
 }
 #blockButton p{
   font-size: .8em;
+}
+#blockButton span{
+  display: flex;
 }
 
 #blockButton{

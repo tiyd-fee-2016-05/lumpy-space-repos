@@ -88,11 +88,7 @@
 
       <ul id="midNavbar_right">
         <li><button type ="button" id="followButton"><p>Follow</p></button></li>
-<<<<<<< 724a3f41e923e6d33e26a70c23eb2a4d39f4c061
         <li><button type="button" id="blockButton"><span><p>Block or report</p><i class="fa fa-caret-down" aria-hidden="true"></i></span></button>
-=======
-        <li><button type="button" id="blockButton"><p>Block or report</p></button>
->>>>>>> Full page layout draft1
           <div class="miniModal">
           <!--PUT MODAL HERE-->
           </div>
@@ -100,12 +96,15 @@
         <li><button type="button" id="infobutton"><i class="fa fa-info" aria-hidden="true"></i></button></li>
       </ul>
     </div>
+    <div id = "repo_info">
+      </div>
+      <script id = "gh_repo_info" type = "text/html">
 
     <div class="repoRapper">
       <h4>Popular repositories</h4>
       <ul>
 
-        <li class="popRepos"><i class="fa fa-book popBooki" aria-hidden="true"></i>Fin the human
+        <li class="popRepos"><i class="fa fa-book popBooki" aria-hidden="true"></i><%- r.name %>
           <span class="stars"><p>1,245</p><i class="fa fa-star" aria-hidden="true"></i></span></li>
           <li class="popInfo">Fin is a human</li>
 
@@ -125,6 +124,7 @@
           <span class="stars"><p>4</p><i class="fa fa-star" aria-hidden="true"></i></span></li>
           <li class="popInfo">Beemo is the $*#!</li>
 
+        </script>
       </ul>
     </div>
 

@@ -17,6 +17,17 @@ $(function () {
 
     $.getJSON('https://api.github.com/users/' + ghSidebar)
       .done(showUser);
+
+      $.getJSON('https://api.github.com/users/' + ghSidebar + '/repos' )
+        .done(showRepo);
+
+        var repos = {};
+
+        $('script[type="text/html"]').each(function () {
+          var repos = $(this);
+          repos[repos.attr('#gh_repo_info')] = _.template($('#' + 'gh_repo_info').html())
+          repos.remove();
+            $('#repo_info').html(showRepo({ name: 'Jane Doe' }));
   });
 //gh-user-template function
   function showUser(user) {
@@ -28,21 +39,17 @@ $(function () {
       variable: 'm'});
     $('.SBuser_info').html(fn(model));
     }
-<<<<<<< 724a3f41e923e6d33e26a70c23eb2a4d39f4c061
-});
-
-$.getJSON('new api source') + repos)
-  .done(showRepo);
-
-//SHOW REPO ATTEMPT
-
-  // var views = {};
-  //
-  // $('script[type="text/html"]').each(function () {
-  //   var repos = $(this);
-  //   views[repos.attr('id')] = _.template(script.html(), { variable: 'm' });
-  //   repos.remove();
-  // });
-=======
   });
->>>>>>> Full page layout draft1
+
+// SHOW REPO ATTEMPT// gathered from the demos section on the class repo
+
+//   var views = {};
+//
+//   $('script[type="text/html"]').each(function () {
+//     var repos = $(this);
+//     repos[repos.attr('#gh_repo_info')] = _.template($('#' + 'gh_repo_info').html())
+//     repos.remove();
+//       $('#repo_info').html(showRepo({ name: 'Jane Doe' }));
+// })
+
+  // });
