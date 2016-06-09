@@ -5,6 +5,10 @@ $(function(){
 var x = 1;
 console.log(x);
 
+
+//Sidebar!//
+
+
 $(function () {
   $('#topSearch').on('submit', function(e) {
     e.preventDefault();
@@ -24,4 +28,21 @@ $(function () {
       variable: 'm'});
     $('.SBuser_info').html(fn(model));
     }
+<<<<<<< 724a3f41e923e6d33e26a70c23eb2a4d39f4c061
+});
+
+$.getJSON('new api source') + repos)
+  .done(showRepo);
+
+//SHOW REPO ATTEMPT
+
+  // var views = {};
+  //
+  // $('script[type="text/html"]').each(function () {
+  //   var repos = $(this);
+  //   views[repos.attr('id')] = _.template(script.html(), { variable: 'm' });
+  //   repos.remove();
+  // });
+=======
   });
+>>>>>>> Full page layout draft1
