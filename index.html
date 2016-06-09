@@ -23,7 +23,14 @@
         <li class="topNavlink"><a href="#">Issues</a></li>
         <li class="topNavlink"><a href="#">Gist</a></li>
         <li class ="plus"><i class="fa fa-plus" aria-hidden="true"></i><i class="fa fa-caret-down" aria-hidden="true"></i></li>
-        <li class ="smallAvatar"><img id="smallPic" src="https://assets-cdn.github.com/images/modules/logos_page/Octocat.png" alt="" /><i class="fa fa-caret-down" aria-hidden="true"></i></li>
+        <li class ="smallAvatar">
+<!-- SMALL AVATAR SCRIPT -->
+          <div class="NBuser_info">
+          </div>
+          <script id="gh-avatar-template" type="text/html">
+            <img id="smallPic" src="<%- m.avatar_url %>" alt="" /><i class="fa fa-caret-down" aria-hidden="true"></i>
+          </script>
+        </li>
 
       </ul>
 
@@ -77,6 +84,14 @@
   </div>
 
 </script>
+
+<!-- ERROR MESSAGE SCRIPT -->
+<script id="gh-error-template" type="text/html">
+    <div class="error">
+      <%- m.message %>
+    </div>
+</script>
+
 <!-- RIGHT SIDE CONTENT -->
   <div class = "miniWrapper">
     <div class="midNavbar_wrap">
@@ -97,33 +112,38 @@
       </ul>
     </div>
 
+<!-- POPULAR REPOSITORIES SCRIPT -->
+<div id="repo_info">
+</div>
+<script id="gh-repo-template" type="text/html">
+
     <div class="repoRapper">
       <h4>Popular repositories</h4>
       <ul>
 
-        <li class="popRepos"><i class="fa fa-book popBooki" aria-hidden="true"></i>Fin the human
+        <li class="popRepos"><i class="fa fa-book popBooki" aria-hidden="true"></i><%- r.name %>
           <span class="stars"><p>1,245</p><i class="fa fa-star" aria-hidden="true"></i></span></li>
           <li class="popInfo">Fin is a human</li>
 
-        <li class="popRepos"><i class="fa fa-book popBooki" aria-hidden="true"></i>Jake the dog
+        <li class="popRepos"><i class="fa fa-book popBooki" aria-hidden="true"></i><%- r.name %>
           <span class="stars"><p>345</p><i class="fa fa-star" aria-hidden="true"></i></span></li>
           <li class="popInfo">Jake is a dog</li>
 
-        <li class="popRepos"><i class="fa fa-book popBooki" aria-hidden="true"></i>Princess Bubblegum
+        <li class="popRepos"><i class="fa fa-book popBooki" aria-hidden="true"></i><%- r.name %>
           <span class="stars"><p>45</p><i class="fa fa-star" aria-hidden="true"></i></span></li>
           <li class="popInfo">Princess is bubblegum</li>
 
-        <li class="popRepos"><i class="fa fa-book popBooki" aria-hidden="true"></i>Lumpy Space Princess
+        <li class="popRepos"><i class="fa fa-book popBooki" aria-hidden="true"></i><%- r.name %>
           <span class="stars"><p>15</p><i class="fa fa-star" aria-hidden="true"></i></span></li>
           <li class="popInfo">Space is lumpy</li>
 
-        <li class="popRepos"><i class="fa fa-book popBooki" aria-hidden="true"></i>Beemo
+        <li class="popRepos"><i class="fa fa-book popBooki" aria-hidden="true"></i><%- r.name %>
           <span class="stars"><p>4</p><i class="fa fa-star" aria-hidden="true"></i></span></li>
           <li class="popInfo">Beemo is the $*#!</li>
 
       </ul>
     </div>
-
+</script>
 
 
   </div>
